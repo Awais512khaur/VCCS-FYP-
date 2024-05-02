@@ -1,0 +1,30 @@
+h1
+{
+    margin-left: 43%;
+}
+table
+{
+    margin-left:23%;
+}
+table,td,th
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td
+{
+  padding: 18px;
+}
+#btn
+{
+    margin-left: 43%;
+    background-color: blue;
+    color: white;
+    height: 80px;
+    width: 150px;
+    border-radius: 20px;
+}
+#tb2
+{
+    margin-left: 18%;
+}
