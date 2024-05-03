@@ -239,27 +239,10 @@
 						<div class="form-group">
 						  <label for="ProductInfo">Product</label>
 						  <select id="ProductInfo" class="form-control select2-init">
-								<option value="">Product</option>
-								<?php
-								$servername = "localhost";
-								$username = "root";
-								$password = "";
-								$dbname = "vccs_db";
-								$conn = new mysqli($servername, $username, $password, $dbname);
-								if ($conn->connect_error) {
-								die("Connection failed: " . $conn->connect_error);
-								}
-								$sql = "SELECT id, name FROM product_t";
-								$result = $conn->query($sql);
-								if ($result->num_rows > 0) {
-								while($row = $result->fetch_assoc()) {
-									echo "<option value='" . $row["id"] . "'>" . $row["name"] . "</option>";
-								}
-								} else {
-								echo "<option value=''>No data available</option>";
-								}
-								$conn->close();
-								?>
+								<select id="ProductInfo" class="form-control">
+								<option value=" ">Select Service First</option>
+							</select>
+							</select>
 							</select>
 						  </div>	  
 						
